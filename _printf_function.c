@@ -57,7 +57,7 @@ void printf_int_rec(unsigned int unum)
 int _printf_char(va_list arg_list)
 {
 	_write(va_arg(arg_list, int));
-	return (-1);
+	return (1);
 }
 
 /**
