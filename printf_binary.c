@@ -15,7 +15,7 @@ int printf_binary(va_list arg_list)
 	if (int_arg < 0)
 	{
 		_write('1');
-		int_arg = -int_arg;
+		int_arg *= -1;
 		num = int_arg;
 		bit_count++;
 	}
@@ -38,5 +38,5 @@ void printf_binary_rec(int int_arg)
 	if (num / 2)
 		printf_binary_rec(num / 2);
 
-	_write((num % 2) + '0');
+	_write(num % 2 + '0');
 }
