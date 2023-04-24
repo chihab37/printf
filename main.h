@@ -30,5 +30,6 @@ int _printf_char(va_list arg_list);
 int _printf_str(va_list arg_list);
 int _putchar(char c);
 int _printf(const char *format, ...);
-
+int _printf_octal(va_list arg_list);
+int _printf_unsigned(va_list arg_list);
 #endif
