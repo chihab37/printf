@@ -50,8 +50,6 @@ int print_specfier(char format, va_list arg_list)
 		{"d", printf_int},
 		{"i", printf_int},
 		{"b", printf_binary},
-		{"u", _printf_unsigned},
-		{"o", _printf_octal},
 		{NULL, NULL}
 	};
 	while (typs[index].specifier)
